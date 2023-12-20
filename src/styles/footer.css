@@ -1,0 +1,22 @@
+.icons {
+    margin-top: 140vh;
+    text-align: center;
+    
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center;
+    margin: 0px; */
+
+}
+
+img {
+    width: 5%;
+    margin: 1.5vh;
+   
+}
+
+.connect {
+    text-align: center;
+    color: rgb(133, 70, 47);
+
+}
