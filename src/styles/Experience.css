@@ -1,0 +1,19 @@
+
+  
+  .content {
+    margin-top: 60px; /* Adjust this value to match the height of your navbar */
+  }
+  
+  .resume-container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .resume {
+    position: fixed;
+    top: 60px; /* Adjust this value to match the height of your navbar */
+    width: 100%;
+    height: calc(100% - 60px); /* Adjust for the height of the navbar */
+    overflow-y: scroll;
+  }
+  

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/footer.css';
+import '../styles/Footer.css';
 
 const Footer = () => {
     const email = 'Mitchell.g@northeasten.edu';

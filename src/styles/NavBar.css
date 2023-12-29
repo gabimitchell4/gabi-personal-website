@@ -1,6 +1,6 @@
 /* NavBar.css */
 .navbar {
-    background-color: #333; /* Set background color */
+    background-color: white; /* Set background color */
     padding: 10px; /* Add padding to the navbar */
   }
   
@@ -16,14 +16,15 @@
   }
   
   .nav-link {
+
     text-decoration: none; /* Remove underline from links */
-    color: white; /* Set text color */
+    color: rgb(32, 25, 80);; /* Set text color */
     font-weight: bold; /* Make text bold */
     font-size: 16px; /* Set font size */
   }
   
   .nav-link:hover {
-    color: #ffcc00; /* Change text color on hover */
+    color: rgb(133, 70, 47); /* Change text color on hover */
   }
 
 

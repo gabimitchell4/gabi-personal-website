@@ -1,0 +1,21 @@
+/* Projects.css */
+
+.project-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Set the desired height for the container */
+  }
+  
+  .project {
+    text-align: center;
+    width: 90%;
+    object-fit: cover;
+  }
+
+  .bulletJournal {
+    display: flex;
+    justify-content: center;
+  }
+  
