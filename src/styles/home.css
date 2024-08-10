@@ -1,74 +1,65 @@
 .headshot {
-    position: absolute;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2; /* Ensure the headshot is on top of the navyCircle */
-    border-color: rgb(32, 25, 80);
-    border-style: solid;
-    border-width: 3%;
-    width: 25%;
-    max-width: 30vw;
-    width: 50%;
-    margin-right: 0%;
-    margin-left: 15vw;
-    margin-top: 10px;;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  border-color: rgb(32, 25, 80);
+  border-style: solid;
+  border-width: 3%;
+  width: 25%;
+  max-width: 100%;
+  margin-right: 0;
+  margin-left: 15vw;
+  margin-top: 10px;
+}
 
-  }
+.mainHeading {
+  margin-left: 20%;
+  margin-top: 18%;
+  font-size: 5vh;
+  color: rgb(133, 70, 47);
+  font-family: inherit;
+}
 
-  .mainHeading {
-    margin-left: 20%;
-    margin-top: 18%;
-    font-size: 3vw; 
-    color: rgb(133, 70, 47);
-    font-family: inherit;
-  }
+.nameHeading {
+  margin-left: 20%;
+  font-size: 5vh;
+  color: rgb(133, 70, 47);
+}
 
-  .nameHeading {
-    margin-left: 20%;
-    font-size: 3vw;
-    color: rgb(133, 70, 47);
-  }
+.meetYou {
+  margin-left: 20%;
+  font-size: 1.5vw;
+  color: rgb(133, 70, 47);
+}
 
-  .meetYou {
-    margin-left: 20%;
-    font-size: 1.5vw;
-    color: rgb(133, 70, 47);
-  }
+.navyCircle {
+  margin-left: 20%; /* Adjust the margin as needed */
+}
 
-  .navyCircle {
-    /* position: fixed; */
-    width: 50%;
-    margin-left: 15vw;
-    /* margin-left: 20%;
-    margin-bottom: 100%; */
-  }
+.about {
+  color: rgb(133, 70, 47);
+  margin-right: 52vh;
+  margin-left: 15vh;
+  font-size: 3vh;
+}
 
-  
+.about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
- 
+body {
+  margin: 0;
+  padding: 0;
+}
 
-  .about {
-    color: rgb(133, 70, 47);
-    margin-top: 40vh;
-    margin-right: 52vh;
-    margin-left: 15vh;
-    font-size: 3vh;
-  }
+* {
+  box-sizing: border-box;
+}
 
-
-
-  .about-container {
-    display:flex;
-  }
-/* 
-  .container {
-    position: fixed;
-  } */
-
- 
-
-
-
-  
+.container {
+  overflow: hidden; /* or auto, scroll, etc. depending on your needs */
+}

@@ -9,7 +9,6 @@ function Projects() {
   const imagePath5 =  '/othello2.png';
   const imagePath6 =  '/othello3.png';
   const imagePath7 =  '/othello4.png';
-  const imagePath8 = '/klondike1.png';
   const imagePath9 = '/klondike2.png';
   const imagePath10 = '/klondike3.png';
   const imagePath11 = '/klondike4.png';
