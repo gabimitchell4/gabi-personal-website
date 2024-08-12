@@ -21,7 +21,7 @@ function Home() {
   const firstSectionHeight = 290; // Adjust this value based on the actual height of your first section
 
   return (
-    <div className="container">
+    <div className="outerContainer">
       <section className="section first-section" style={{ transform: `translateY(-${scrollPosition}px)`, marginBottom: '20px' }}>
         {/* Your content for the first section */}
         <h1 className="mainHeading" style={{ opacity: 1 - scrollPosition / window.innerHeight }}>
@@ -30,9 +30,6 @@ function Home() {
         <h1 className="nameHeading" style={{ opacity: 1 - scrollPosition / window.innerHeight }}>
           Gabi Mitchell
         </h1>
-        <h2 className="meetYou" style={{ opacity: 1 - scrollPosition / window.innerHeight }}>
-          It's nice to meet you!
-        </h2>
         <div className="navyCircle">
           <img
             className="headshot"
@@ -72,12 +69,9 @@ function Home() {
         }}
       >
         {/* Your content for the second section */}
-        <h2 className="about">
-          I am a second year Computer Science and Design major, who is interested in many applications of Computer Science!
-          I enjoy bringing my designs into life through code and am interested in UI/UX Design. I am also currently seeking to explore the
-          intersection between medicine and computer science so that I can apply my technical skills in a way that I can create
-          value for the most people.
-        </h2>
+        <p className="about">
+        I’m a third-year Computer Science and Design major exploring various applications of tech. I enjoy turning designs into code, have a keen interest in UI/UX Design, and am currently looking into how medicine and computer science intersect to create impactful solutions.
+        </p>
         <div className="navyCircle">
           <img
             className="headshot"

@@ -1,0 +1,8 @@
+.gameImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.othelloView {
+    width: 50%;
+}

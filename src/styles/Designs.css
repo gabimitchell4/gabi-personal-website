@@ -1,0 +1,38 @@
+.outerDesignsContainer {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if height is defined */
+    width: 100%; /* Ensure it takes up the full width of the parent */
+}
+
+.designsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Optional: add spacing between items */
+    padding: 20px; /* Optional: add padding around the grid */
+    width: 50%; /* Container width set to 50% of the parent */
+}
+
+.foodDesign,
+.youtubeDesign,
+.invictusDesign {
+    width: 100%; /* Make each image take the full width of its container */
+    max-width: 100%; /* Ensure images do not exceed their container's width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+    transition: transform 0.3s ease; /* Optional: scaling effect */
+}
+
+.foodDesign:hover,
+.youtubeDesign:hover,
+.invictusDesign:hover {
+    transform: scale(1.05); /* Scale image on hover */
+    border: 2px solid rgb(32, 25, 80);
+}
+
+.designsHeader {
+    text-align: center;
+    color: rgb(133, 70, 47);
+}

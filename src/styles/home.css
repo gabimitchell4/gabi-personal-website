@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 .headshot {
   border-radius: 50%;
   top: 50%;
@@ -24,7 +30,7 @@
 
 .nameHeading {
   margin-left: 20%;
-  font-size: 5vh;
+  font-size: 8vh;
   color: rgb(133, 70, 47);
 }
 
@@ -40,7 +46,7 @@
 
 .about {
   color: rgb(133, 70, 47);
-  margin-right: 52vh;
+  margin-right: 60vh;
   margin-left: 15vh;
   font-size: 3vh;
 }
@@ -60,6 +66,7 @@ body {
   box-sizing: border-box;
 }
 
-.container {
+.container2 {
   overflow: hidden; /* or auto, scroll, etc. depending on your needs */
+  height: 800px
 }

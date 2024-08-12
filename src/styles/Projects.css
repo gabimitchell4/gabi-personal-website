@@ -1,21 +1,54 @@
 /* Projects.css */
+.recentProjects {
+  text-align: center;
+  color: rgb(133, 70, 47);
+}
 
-.project-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px; /* Set the desired height for the container */
-  }
   
   .project {
     text-align: center;
     width: 90%;
     object-fit: cover;
+    border-radius: 10px; /* Adjust the value to control the roundness */
   }
 
   .bulletJournal {
     display: flex;
     justify-content: center;
   }
+
+  .othello, .klondike, .bulletJournal {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    margin-bottom: 20px; /* Space between rows */
+
+  }
+
+  .projectsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 20px; /* Optional: add spacing between items */
+    padding: 20px; /* Optional: add padding around the grid */
+    width: 50%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if height is defined */
+  }
+
+  .project {
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+  }
+  
+  .project:hover {
+    transform: scale(1.05); /* Scale image to 105% of its original size */
+    border: 2px solid rgb(32, 25, 80);
+  }
+  
+
+  
   
