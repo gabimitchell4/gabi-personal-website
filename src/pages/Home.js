@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import '../styles/Home.css';
+import '../styles/home.css';
 import Footer from '../components/Footer';
 
 function Home() {
