@@ -1,72 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 body {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.headshot {
+.headshot1, .headshot2 {
   border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
   border-color: rgb(32, 25, 80);
   border-style: solid;
-  border-width: 3%;
-  width: 25%;
+  border-width: 5px;
+  margin: 0;
+}
+
+.headshot1 {
   max-width: 100%;
-  margin-right: 0;
-  margin-left: 15vw;
-  margin-top: 10px;
+  width: 20%;
+}
+
+.headshot2 {
+  width: 100%;
 }
 
 .mainHeading {
-  margin-left: 20%;
-  margin-top: 18%;
-  font-size: 5vh;
-  color: rgb(133, 70, 47);
-  font-family: inherit;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
 }
 
 .nameHeading {
-  margin-left: 20%;
-  font-size: 8vh;
-  color: rgb(133, 70, 47);
+  font-size: 6.5rem;
+  color: white;
+  font-weight: bolder;
+  margin: 0;
 }
 
-.meetYou {
-  margin-left: 20%;
-  font-size: 1.5vw;
-  color: rgb(133, 70, 47);
+.headingsAndImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Space between text and image */
+  padding: 0;
+  text-align: center;
 }
 
-.navyCircle {
-  margin-left: 20%; /* Adjust the margin as needed */
+.first-section {
+  background-color: rgb(133, 70, 47);
+  padding: 8% 2%;
+  border-radius: 1%;
+  position: relative;
+}
+
+.second-section {
+  padding: 8% 2%;
+  border-radius: 1%;
+  position: relative;
+}
+
+.outerContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px; /* Space between text and image */
+  padding: 8% 2%;
+}
+
+.headings {
+  margin: 0;
 }
 
 .about {
   color: rgb(133, 70, 47);
-  margin-right: 60vh;
-  margin-left: 15vh;
-  font-size: 3vh;
-}
-
-.about-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-body {
   margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.container2 {
-  overflow: hidden; /* or auto, scroll, etc. depending on your needs */
-  height: 800px
+  font-size: 4rem; /* Adjust this as needed */
+  text-align: center; /* Center the text */
+  width: 80%;
+  font-family: 'Patrick Hand', cursive;
 }

@@ -22,41 +22,29 @@ function Home() {
 
   return (
     <div className="outerContainer">
-      <section className="section first-section" style={{ transform: `translateY(-${scrollPosition}px)`, marginBottom: '20px' }}>
-        {/* Your content for the first section */}
-        <h1 className="mainHeading" style={{ opacity: 1 - scrollPosition / window.innerHeight }}>
-          Hi, my name is
-        </h1>
-        <h1 className="nameHeading" style={{ opacity: 1 - scrollPosition / window.innerHeight }}>
-          Gabi Mitchell
-        </h1>
-        <div className="navyCircle">
-          <img
-            className="headshot"
-            src="https://media.licdn.com/dms/image/D4D03AQHRLGG8H89--A/profile-displayphoto-shrink_800_800/0/1696639841286?e=2147483647&v=beta&t=IqZ2QjsTxMnZrMzsTR0a1ralGq5sGSHnpNcOSzw7Xqo"
-            alt="Headshot"
-            style={{
-              opacity: 1 - scrollPosition / window.innerHeight,
-              position: 'absolute',
-              borderRadius: '50%',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 2,
-              borderColor: 'rgb(32, 25, 80)',
-              borderStyle: 'solid',
-              borderWidth: '3%',
-              width: '25%',
-              maxWidth: '30vw',
-              marginLeft: '15vw',
-              
-            }}
-          />
+      <section className="first-section" style={{ transform: `translateY(-${scrollPosition}px)` }}>
+        <div className="headingsAndImage">
+          <div className="headings">
+            <h1 className="mainHeading" style={{ opacity: 1 - scrollPosition / window.innerHeight }}>
+              Hi, my name is
+            </h1>
+            <h1 className="nameHeading" style={{ opacity: 1 - scrollPosition / window.innerHeight }}>
+              Gabi Mitchell
+            </h1>
+          </div>
+            <img
+              className="headshot1"
+              src="https://media.licdn.com/dms/image/D4D03AQHRLGG8H89--A/profile-displayphoto-shrink_800_800/0/1696639841286?e=2147483647&v=beta&t=IqZ2QjsTxMnZrMzsTR0a1ralGq5sGSHnpNcOSzw7Xqo"
+              alt="Headshot"
+              style={{
+                opacity: 1 - scrollPosition / window.innerHeight,
+              }}
+            />
+
         </div>
       </section>
 
-      {/* Apply styles directly to the second section */}
-      <section
+      {/* <section
         ref={secondSectionRef}
         className="section second-section"
         style={{
@@ -64,37 +52,24 @@ function Home() {
           marginTop: `${firstSectionHeight}px`,
           marginBottom: '0px',
           display: 'flex',
-          justifyContent: 'space-between', // You can adjust this based on your needs
           alignItems: 'center',
         }}
       >
-        {/* Your content for the second section */}
-        <p className="about">
-        I’m a third-year Computer Science and Design major exploring various applications of tech. I enjoy turning designs into code, have a keen interest in UI/UX Design, and am currently looking into how medicine and computer science intersect to create impactful solutions.
-        </p>
-        <div className="navyCircle">
-          <img
-            className="headshot"
+        <h3 className="about">
+          I’m a third-year Computer Science and Design major exploring various applications of tech. I enjoy turning designs into code, have a keen interest in UI/UX Design, and am currently looking into how medicine and computer science intersect to create impactful solutions.
+          I am passionate about teaching others how to code, specifically women and other underrespresnted groups in tech.
+        </h3> */}
+        {/* <div className="navyCircle"> */}
+          {/* <img
+            className="headshot2"
             src="https://media.licdn.com/dms/image/D4D03AQHRLGG8H89--A/profile-displayphoto-shrink_800_800/0/1696639841286?e=2147483647&v=beta&t=IqZ2QjsTxMnZrMzsTR0a1ralGq5sGSHnpNcOSzw7Xqo"
             alt="Headshot"
             style={{
-              opacity: scrollPosition >= window.innerHeight / 4 ? 1 : scrollPosition / window.innerHeight,
-              position: 'absolute',
-              borderRadius: '50%',
-              top: '50%',
-              left: '50%',
-              transform: 'translate(-50%, -50%)',
-              zIndex: 2,
-              borderColor: 'rgb(32, 25, 80)',
-              borderStyle: 'solid',
-              borderWidth: '3%',
-              width: '25%',
-              maxWidth: '30vw',
-              marginLeft: '15vw',
+              opacity: 1 - scrollPosition / window.innerHeight,
             }}
-          />
-        </div>
-      </section>
+          /> */}
+        {/* </div> */}
+      {/* </section> */}
     </div>
   );
 }

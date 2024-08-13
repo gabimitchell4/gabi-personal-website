@@ -6,20 +6,25 @@ import '../styles/NavBar.css'; // Import your CSS file
 const NavBar = () => {
   return (
     <nav className="navbar">
-      <ul className="nav-list">
-        <li className="nav-item">
-          <Link to="/" className="nav-link">Home</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/projects" className="nav-link">Projects</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/designs" className="nav-link">Designs</Link>
-        </li>
-        <li className="nav-item">
-          <Link to="/experience" className="nav-link">Experience</Link>
-        </li>
-      </ul>
+      <div className = "left-nav">
+          <ul className="nav-list">
+              <li className="nav-item">
+                <Link to="/" className="nav-link">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/projects" className="nav-link">Projects</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/designs" className="nav-link">Designs</Link>
+              </li>
+              <li className="nav-item">
+                <Link to="/experience" className="nav-link">Experience</Link>
+              </li>
+              </ul>
+        </div>
+        <div className = "right-nav">
+              <p className = "name">Gabi Mitchell</p>
+        </div>
     </nav>
   );
 };
