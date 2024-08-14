@@ -1,4 +1,3 @@
-/* Projects.css */
 .recentProjects {
   text-align: center;
   color: rgb(133, 70, 47);
@@ -9,7 +8,7 @@
     text-align: center;
     width: 90%;
     object-fit: cover;
-    border-radius: 10px; /* Adjust the value to control the roundness */
+    border-radius: 10px;
   }
 
   .bulletJournal {
@@ -19,33 +18,33 @@
 
   .othello, .klondike, .bulletJournal {
     display: flex;
-    justify-content: space-around; /* Adjust as needed */
-    margin-bottom: 20px; /* Space between rows */
+    justify-content: space-around;
+    margin-bottom: 20px;
 
   }
 
   .projectsGrid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Optional: add spacing between items */
-    padding: 20px; /* Optional: add padding around the grid */
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    padding: 20px;
     width: 50%;
   }
 
   .container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically if height is defined */
+    justify-content: center;
+    align-items: center;
   }
 
   .project {
-    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+    transition: transform 0.3s ease;
   }
   
   .project:hover {
-    transform: scale(1.05); /* Scale image to 105% of its original size */
+    transform: scale(1.05);
     border: 2px solid rgb(32, 25, 80);
   }
   

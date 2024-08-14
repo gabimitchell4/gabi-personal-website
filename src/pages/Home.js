@@ -18,7 +18,7 @@ function Home() {
     };
   }, []);
 
-  const firstSectionHeight = 290; // Adjust this value based on the actual height of your first section
+  const firstSectionHeight = 290; 
 
   return (
     <div className="outerContainer">

@@ -42,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px; /* Space between text and image */
+  gap: 40px; 
   padding: 0;
   text-align: center;
 }
@@ -69,7 +69,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px; /* Space between text and image */
+  gap: 40px;
   padding: 8% 2%;
 }
 
@@ -80,8 +80,8 @@ body {
 .about {
   color: rgb(133, 70, 47);
   margin: 0;
-  font-size: 4rem; /* Adjust this as needed */
-  text-align: center; /* Center the text */
+  font-size: 4rem; 
+  text-align: center;
   width: 80%;
   font-family: 'Patrick Hand', cursive;
 }

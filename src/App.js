@@ -8,7 +8,6 @@ import NavBar from './components/Navbar';
 import Footer from './components/Footer';
 import Othello from './pages/Othello';
 import Designs from './pages/Designs';
-
 function App() {
   return (
     <div className="App">

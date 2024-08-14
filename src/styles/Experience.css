@@ -1,7 +1,7 @@
 
   
   .content {
-    margin-top: 60px; /* Adjust this value to match the height of your navbar */
+    margin-top: 60px;
   }
   
   .resume-container {
@@ -11,9 +11,9 @@
   
   .resume {
     position: fixed;
-    top: 60px; /* Adjust this value to match the height of your navbar */
+    top: 60px; 
     width: 100%;
-    height: calc(100% - 60px); /* Adjust for the height of the navbar */
+    height: calc(100% - 60px);
     overflow-y: scroll;
   }
   
