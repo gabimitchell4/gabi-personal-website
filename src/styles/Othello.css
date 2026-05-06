@@ -1,8 +1,90 @@
-.gameImages {
-    display: flex;
-    flex-direction: column;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+.othello-page {
+  padding: 60px 48px 80px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeUp 0.7s ease both;
 }
 
-.othelloView {
-    width: 50%;
+.othello-page .page-title {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 800;
+  color: #f0eeff;
+  margin: 0 0 8px 0;
+}
+
+.othello-page .page-title span {
+  color: #d4614a;
+}
+
+.othello-page .page-subtitle {
+  color: #a09ac0;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  margin: 0 0 32px 0;
+}
+
+.othello-description {
+  background: #1a1828;
+  border: 1px solid rgba(139, 132, 224, 0.15);
+  border-radius: 16px;
+  padding: 28px 32px;
+  margin-bottom: 40px;
+}
+
+.othello-description h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #8b84e0;
+  margin: 0 0 14px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.othello-description p {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  color: #a09ac0;
+  line-height: 1.8;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.othello-screenshots {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.othello-img-wrap {
+  background: #1a1828;
+  border: 1px solid rgba(139, 132, 224, 0.15);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.othello-img-wrap:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 48px rgba(139, 132, 224, 0.18);
+}
+
+.othello-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+  .othello-page {
+    padding: 40px 20px 60px;
+  }
 }

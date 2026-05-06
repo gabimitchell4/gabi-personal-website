@@ -1,22 +1,45 @@
 import React from 'react';
 import '../styles/footer.css';
 
+const LinkedInIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+  </svg>
+);
+
+const EmailIcon = () => (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="4" width="20" height="16" rx="2" />
+    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+);
+
 const Footer = () => {
-    const email = 'Mitchell.g@northeasten.edu';
+  const email = 'Mitchell.g@northeastern.edu';
+
   return (
     <footer>
-        
-    <div className = 'icons'>
-       <h1 className = "connect"> Connect with me! </h1>
-        <a href="https://www.linkedin.com/in/gabriella-mitchell/">
-            <img className = "footerImg" src="data:image/png;base64,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" alt="Linkedin" />
-        </a>
-        <a href={`mailto:${email}`}>
-            <img className = "footerImg"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmvcb36NrA04yOM161Gm_BYqfxSdls-M426g&usqp=CAU" alt="mail" />
-        </a>
-    </div>    
+      <div className="footer-inner">
+        <h2 className="footer-connect">Connect with me</h2>
+        <div className="footer-links">
+          <a
+            className="footer-link"
+            href="https://www.linkedin.com/in/gabriella-mitchell/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <LinkedInIcon />
+            LinkedIn
+          </a>
+          <a className="footer-link" href={`mailto:${email}`}>
+            <EmailIcon />
+            Email
+          </a>
+        </div>
+        <p className="footer-copy">© {new Date().getFullYear()} Gabi Mitchell</p>
+      </div>
     </footer>
   );
-}
+};
 
 export default Footer;

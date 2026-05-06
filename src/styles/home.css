@@ -1,87 +1,157 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 48px;
+  position: relative;
+  overflow: hidden;
+  background: #0f0e1a;
 }
 
-.headshot1, .headshot2 {
-  border-radius: 50%;
-  border-color: rgb(32, 25, 80);
-  border-style: solid;
-  border-width: 5px;
-  margin: 0;
+.hero::before {
+  content: '';
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(212, 97, 74, 0.18) 0%, transparent 65%);
+  pointer-events: none;
 }
 
-.headshot1 {
-  max-width: 100%;
-  width: 20%;
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -20%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(139, 132, 224, 0.15) 0%, transparent 65%);
+  pointer-events: none;
 }
 
-.headshot2 {
+.hero-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  max-width: 1100px;
   width: 100%;
+  animation: fadeUp 0.9s ease both;
 }
 
-.mainHeading {
-  font-size: 2.5rem;
-  color: white;
-  margin: 0;
+.hero-text {
+  flex: 1;
 }
 
-.nameHeading {
-  font-size: 6.5rem;
-  color: white;
-  font-weight: bolder;
-  margin: 0;
+.hero-greeting {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #d4614a;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 12px 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.headingsAndImage {
+.hero-name {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 800;
+  color: #f0eeff;
+  margin: 0 0 20px 0;
+  line-height: 1.05;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f0eeff 30%, #8b84e0 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-bio {
+  font-size: 1.1rem;
+  color: #a09ac0;
+  line-height: 1.75;
+  max-width: 520px;
+  margin: 0 0 36px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.hero-tags {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px; 
-  padding: 0;
-  text-align: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.first-section {
-  background-color: rgb(133, 70, 47);
-  padding: 8% 2%;
-  border-radius: 1%;
-  position: relative;
+.hero-tag {
+  background: rgba(212, 97, 74, 0.12);
+  border: 1px solid rgba(212, 97, 74, 0.3);
+  color: #d4614a;
+  padding: 6px 14px;
+  border-radius: 100px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.04em;
 }
 
-.second-section {
-  padding: 8% 2%;
-  border-radius: 1%;
-  position: relative;
+.hero-photo-wrap {
+  flex-shrink: 0;
 }
 
-.outerContainer {
-  display: flex;
-  flex-direction: column;
+.hero-headshot {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(212, 97, 74, 0.5);
+  box-shadow:
+    0 0 0 8px rgba(212, 97, 74, 0.08),
+    0 0 60px rgba(212, 97, 74, 0.2);
+  transition: box-shadow 0.4s ease;
 }
 
-.second-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  padding: 8% 2%;
+.hero-headshot:hover {
+  box-shadow:
+    0 0 0 8px rgba(212, 97, 74, 0.15),
+    0 0 80px rgba(212, 97, 74, 0.35);
 }
 
-.headings {
-  margin: 0;
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.about {
-  color: rgb(133, 70, 47);
-  margin: 0;
-  font-size: 4rem; 
-  text-align: center;
-  width: 80%;
-  font-family: 'Patrick Hand', cursive;
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 24px;
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-bio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-tags {
+    justify-content: center;
+  }
+
+  .hero-headshot {
+    width: 200px;
+    height: 200px;
+  }
 }
