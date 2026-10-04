@@ -54,8 +54,8 @@
 }
 
 .home-headshot {
-  width: 200px;
-  height: 200px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -584,8 +584,8 @@
   }
 
   .home-headshot {
-    width: 88px;
-    height: 88px;
+    width: 400px;
+    height: 400px;
   }
 
   .home-scroll-cue {
