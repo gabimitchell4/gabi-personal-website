@@ -31,9 +31,13 @@ function ScrollToTop() {
 }
 
 function App() {
+  const basename = window.location.pathname.startsWith("/gabi-personal-website")
+    ? "/gabi-personal-website"
+    : undefined;
+
   return (
     <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename={basename}>
         <ScrollToTop />
         <NavBar />
         <Routes>

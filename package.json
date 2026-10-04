@@ -2,7 +2,7 @@
   "name": "gabi-personal-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabimitchell4.github.io/gabi-personal-website",
+  "homepage": ".",
   "engines": {
     "node": "24.x"
   },
