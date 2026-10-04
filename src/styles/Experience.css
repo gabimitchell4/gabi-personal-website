@@ -1,21 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;500;600&display=swap');
 
 .experience-page {
-  padding: 60px 48px 80px;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 48px 48px 80px;
   animation: fadeUp 0.7s ease both;
-}
-
-.experience-subtitle-row {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  margin: 0 0 48px 0;
+  flex-direction: column;
+  gap: 32px;
 }
 
-.experience-subtitle-row .page-subtitle {
+.experience-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.experience-title {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 6px 0;
+  line-height: 1;
+}
+
+.experience-sub {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  color: var(--muted);
   margin: 0;
 }
 
@@ -23,51 +37,56 @@
   flex-shrink: 0;
   display: inline-flex;
   align-items: center;
-  background: rgba(212, 97, 74, 0.12);
-  border: 1px solid rgba(212, 97, 74, 0.35);
-  color: #d4614a;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-family: 'Inter', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 600;
+  background: var(--text);
+  border: 1px solid var(--text);
+  color: var(--bg);
+  padding: 10px 22px;
+  border-radius: 6px;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
   text-decoration: none;
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+  transition: opacity 0.2s;
 }
 
 .resume-download:hover {
-  background: rgba(212, 97, 74, 0.22);
-  border-color: rgba(212, 97, 74, 0.6);
-  color: #e8705a;
+  opacity: 0.8;
 }
 
 .resume-frame {
   width: 100%;
-  border-radius: 16px;
+  border-radius: 12px;
   overflow: hidden;
-  border: 1px solid rgba(139, 132, 224, 0.15);
-  background: #1a1828;
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 32px rgba(28, 24, 20, 0.08);
 }
 
 .resume-embed {
   display: block;
   width: 100%;
-  height: 85vh;
+  height: calc(100vh - 200px);
+  min-height: 800px;
   border: none;
 }
 
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(24px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 640px) {
   .experience-page {
-    padding: 40px 20px 60px;
+    padding: 32px 24px 60px;
+    gap: 24px;
   }
 
-  .experience-subtitle-row {
+  .experience-header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .resume-embed {
+    height: 80vh;
+    min-height: 500px;
   }
 }

@@ -4,9 +4,11 @@ import '../styles/Experience.css';
 function Experience() {
   return (
     <div className="experience-page">
-      <h1 className="page-title">My <span>Resume</span></h1>
-      <div className="experience-subtitle-row">
-        <p className="page-subtitle">Education, experience, and skills.</p>
+      <div className="experience-header">
+        <div>
+          <h1 className="experience-title">Resume</h1>
+          <p className="experience-sub">Gabriella Mitchell · Software Engineer & Product Designer</p>
+        </div>
         <a
           className="resume-download"
           href="/resume.pdf"

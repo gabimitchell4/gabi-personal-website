@@ -1,30 +1,61 @@
-import React from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import '../styles/NavBar.css';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import "../styles/NavBar.css";
 
 const NavBar = () => {
   const location = useLocation();
+  const projectRoutes = [
+    "/projects",
+    "/nutriguide",
+    "/felt",
+    "/othello",
+    "/dailyduel",
+    "/klondike",
+  ];
+  const isProjects = projectRoutes.includes(location.pathname);
 
   return (
     <nav className="navbar">
       <div className="left-nav">
-        <ul className="nav-list">
-          <li className="nav-item">
-            <Link to="/" className={`nav-link${location.pathname === '/' ? ' active' : ''}`}>Home</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/projects" className={`nav-link${location.pathname === '/projects' ? ' active' : ''}`}>Projects</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/designs" className={`nav-link${location.pathname === '/designs' ? ' active' : ''}`}>Designs</Link>
-          </li>
-          <li className="nav-item">
-            <Link to="/experience" className={`nav-link${location.pathname === '/experience' ? ' active' : ''}`}>Experience</Link>
-          </li>
-        </ul>
+        <Link to="/" className="name">
+          Gabriella Mitchell
+        </Link>
       </div>
       <div className="right-nav">
-        <p className="name">Gabi Mitchell</p>
+        <ul className="nav-list">
+          <li className="nav-item">
+            <Link
+              to="/"
+              className={`nav-link${location.pathname === "/" ? " active" : ""}`}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/projects"
+              className={`nav-link${isProjects ? " active" : ""}`}
+            >
+              Projects
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/life"
+              className={`nav-link${location.pathname === "/life" ? " active" : ""}`}
+            >
+              Life
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link
+              to="/experience"
+              className={`nav-link${location.pathname === "/experience" ? " active" : ""}`}
+            >
+              Resume
+            </Link>
+          </li>
+        </ul>
       </div>
     </nav>
   );

@@ -1,0 +1,689 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600;700&display=swap');
+
+.ng-page {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 64px 48px 100px;
+  animation: fadeUp 0.8s ease both;
+}
+
+/* ── Hero ── */
+.ng-hero {
+  margin-bottom: 72px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ng-eyebrow {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.ng-title {
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 8vw, 5.5rem);
+  font-weight: 400;
+  color: var(--text);
+  margin: 0 0 12px 0;
+  line-height: 1;
+}
+
+.ng-tagline {
+  font-family: var(--sans);
+  font-size: 1.1rem;
+  color: var(--muted);
+  margin: 0 0 24px 0;
+  line-height: 1.5;
+}
+
+.ng-meta-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ng-meta-tag {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: var(--sans);
+  letter-spacing: 0.04em;
+}
+
+/* ── Body ── */
+.ng-body {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+.ng-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.ng-section-heading {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ng-text {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.85;
+  margin: 0;
+  opacity: 0.82;
+}
+
+.ng-text--em {
+  font-weight: 600;
+  opacity: 1;
+}
+
+/* ── Pull quote (research question) ── */
+.ng-pullquote {
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-weight: 400;
+  color: var(--text);
+  line-height: 1.5;
+  margin: 0;
+  padding-left: 20px;
+  border-left: 3px solid #2d5e3a;
+}
+
+/* ── Stats ── */
+.ng-stat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ng-stat {
+  background: #ede8df;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ng-stat__number {
+  font-family: var(--serif);
+  font-size: 3rem;
+  font-weight: 400;
+  color: #2d5e3a;
+  line-height: 1;
+}
+
+.ng-stat__label {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── Survey bars ── */
+.ng-chart-label {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: -4px;
+}
+
+.ng-survey-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ng-bar-row {
+  display: grid;
+  grid-template-columns: 130px 1fr 48px;
+  align-items: center;
+  gap: 12px;
+}
+
+.ng-bar-label {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--text);
+  text-align: right;
+}
+
+.ng-bar-track {
+  height: 8px;
+  background: rgba(28, 24, 20, 0.08);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.ng-bar-fill {
+  height: 100%;
+  background: #2d5e3a;
+  border-radius: 100px;
+  transition: width 0.6s ease;
+}
+
+.ng-bar-value {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+/* ── Competitive analysis ── */
+.ng-competitors {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ng-competitor {
+  background: #ede8df;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ng-competitor__name {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.ng-competitor__flaw {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.ng-insight-block {
+  background: #1c2e22;
+  color: #d4eadb;
+  border-radius: 10px;
+  padding: 24px 28px;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  line-height: 1.75;
+}
+
+/* ── Personas ── */
+.ng-personas {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ng-persona {
+  background: #ede8df;
+  padding: 24px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ng-persona__name {
+  font-family: var(--serif);
+  font-size: 1.3rem;
+  color: var(--text);
+}
+
+.ng-persona__detail {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ng-persona__bio {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.7;
+  margin: 4px 0 0;
+  opacity: 0.8;
+}
+
+.ng-persona__tag {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+.ng-persona__tag--goal {
+  background: rgba(45, 94, 58, 0.1);
+  color: #1e4a30;
+}
+
+.ng-persona__tag--barrier {
+  background: rgba(201, 90, 58, 0.1);
+  color: #8a3520;
+}
+
+/* ── Evolution steps ── */
+.ng-evolution {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ng-step {
+  background: #ede8df;
+  padding: 22px 24px;
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 16px;
+  align-items: start;
+}
+
+.ng-step__num {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #2d5e3a;
+  letter-spacing: 0.08em;
+  padding-top: 2px;
+}
+
+.ng-step__title {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.ng-step__desc {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+/* ── Deliverables ── */
+.ng-deliverables {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ng-deliverable {
+  background: #ede8df;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.ng-deliverable__num {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #2d5e3a;
+}
+
+.ng-deliverable__title {
+  font-family: var(--sans);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.ng-deliverable__role {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.ng-deliverable__desc {
+  font-family: var(--sans);
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin: 4px 0 0;
+}
+
+/* ── Callout ── */
+.ng-section--callout {
+  background: #1c2e22;
+  border-radius: 12px;
+  padding: 56px 48px;
+  align-items: center;
+  text-align: center;
+}
+
+.ng-callout-text {
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 400;
+  color: #f5f0e8;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ── Score cards ── */
+.ng-cards-demo {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.ng-card {
+  border-radius: 14px;
+  padding: 20px 20px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-width: 180px;
+}
+
+.ng-card--bad  { background: #fdecea; }
+.ng-card--mid  { background: #fef9e7; }
+.ng-card--good { background: #e8f8ee; }
+
+.ng-card__top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.ng-card__avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #333;
+  font-family: var(--sans);
+  flex-shrink: 0;
+}
+
+.ng-card__condition {
+  font-family: var(--sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 0.04em;
+}
+
+.ng-card__name {
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+.ng-card__demo {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: #666;
+}
+
+.ng-card__score {
+  font-family: var(--sans);
+  font-size: 2.2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin: 4px 0;
+}
+
+.ng-card__denom {
+  font-size: 0.9rem;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-left: 2px;
+}
+
+.ng-card__score--bad  { color: #c93535; }
+.ng-card__score--mid  { color: #d4721a; }
+.ng-card__score--good { color: #1e6e3a; }
+
+.ng-card__reasons {
+  list-style: none;
+  margin: 6px 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+.ng-card__reasons li {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  color: #444;
+  padding-left: 10px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.ng-card__reasons li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: #888;
+}
+
+/* ── App screens ── */
+.ng-screen-row {
+  display: flex;
+  gap: 12px;
+}
+
+.ng-screen {
+  flex: 1;
+  width: 0;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  object-fit: contain;
+  display: block;
+  box-shadow: 0 4px 24px rgba(28, 24, 20, 0.1);
+}
+
+.ng-figma-link {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border);
+  transition: text-decoration-color 0.2s;
+  margin-top: 4px;
+}
+
+.ng-figma-link:hover {
+  text-decoration-color: var(--text);
+}
+
+/* ── Product pillars ── */
+.ng-product-pillars {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ng-pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--border);
+  background: #ede8df;
+}
+
+.ng-pillar:last-child {
+  border-bottom: none;
+}
+
+.ng-pillar-icon {
+  font-size: 1rem;
+  color: #2d5e3a;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.ng-pillar-label {
+  font-family: var(--sans);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 3px;
+}
+
+.ng-pillar-desc {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── Reflection ── */
+.ng-reflections {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.ng-reflection {
+  background: #ede8df;
+  padding: 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.ng-reflection__label {
+  font-family: var(--sans);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #2d5e3a;
+}
+
+/* ── Back link ── */
+.ng-back-row {
+  margin-top: 72px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.ng-back-link {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ng-back-link:hover {
+  color: var(--text);
+}
+
+/* ── Animation ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .ng-page {
+    padding: 40px 24px 80px;
+  }
+
+  .ng-stat-row {
+    grid-template-columns: 1fr;
+  }
+
+  .ng-deliverables {
+    grid-template-columns: 1fr;
+  }
+
+  .ng-section--callout {
+    padding: 40px 24px;
+  }
+
+  .ng-cards-demo {
+    flex-direction: column;
+  }
+
+  .ng-card {
+    min-width: unset;
+  }
+
+  .ng-bar-row {
+    grid-template-columns: 100px 1fr 44px;
+  }
+
+  .ng-screen-row {
+    gap: 8px;
+  }
+}
