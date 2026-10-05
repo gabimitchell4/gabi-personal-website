@@ -18,7 +18,10 @@ function Life() {
           moments.
         </p>
         <div className="life-photo life-photo--landscape">
-          <img src={`${process.env.PUBLIC_URL}/life/ijen.jpeg`} alt="Ijen crater in Indonesia" />
+          <img
+            src={`${process.env.PUBLIC_URL}/life/ijen.jpeg`}
+            alt="Ijen crater in Indonesia"
+          />
         </div>
       </div>
 
@@ -36,7 +39,7 @@ function Life() {
             ticket and no fixed plan. Five months, five countries, entirely
             solo. The anchor of the trip was Thailand, where I completed my
             200-hour yoga teacher training certification. The rest unfolded from
-            there: slow buses through Laos, motorbikes in Vietnam, rice terraces
+            there: slow boats through Laos, motorbikes in Vietnam, rice terraces
             in Bali, a final few days winding down in Singapore before flying
             home.
           </p>
@@ -61,7 +64,10 @@ function Life() {
               className="life-photo life-photo--landscape"
               style={{ flex: 1 }}
             >
-              <img src={`${process.env.PUBLIC_URL}/life/bali-cliff.jpg`} alt="Gabi by the ocean in Bali" />
+              <img
+                src={`${process.env.PUBLIC_URL}/life/bali-cliff.jpg`}
+                alt="Gabi by the ocean in Bali"
+              />
             </div>
             <div
               className="life-photo life-photo--landscape"
@@ -97,13 +103,22 @@ function Life() {
             />
           </div>
           <div className="life-photo life-photo--landscape">
-            <img src={`${process.env.PUBLIC_URL}/life/diving.JPG`} alt="Diving in Southeast Asia" />
+            <img
+              src={`${process.env.PUBLIC_URL}/life/diving.JPG`}
+              alt="Diving in Southeast Asia"
+            />
           </div>
           <div className="life-photo life-photo--landscape">
-            <img src={`${process.env.PUBLIC_URL}/life/hagiang.png`} alt="Ha Giang in Vietnam" />
+            <img
+              src={`${process.env.PUBLIC_URL}/life/hagiang.png`}
+              alt="Ha Giang in Vietnam"
+            />
           </div>
-                  <div className="life-photo life-photo--landscape">
-            <img src={`${process.env.PUBLIC_URL}/life/khaosok.png`} alt="Khao Sok in Thailand" />
+          <div className="life-photo life-photo--landscape">
+            <img
+              src={`${process.env.PUBLIC_URL}/life/khaosok.png`}
+              alt="Khao Sok in Thailand"
+            />
           </div>
         </div>
 
@@ -162,7 +177,7 @@ function Life() {
           <div className="life-country">
             <div className="life-country__name">Vietnam</div>
             <div className="life-country__note">
-              Coast to coast on a motorbike
+              Explored Vietnam’s heights by motorbike
             </div>
           </div>
           <div className="life-country">
@@ -186,17 +201,23 @@ function Life() {
 
         <div className="life-grid-2" style={{ marginBottom: 12 }}>
           <div className="life-photo life-photo--landscape">
-            <img src={`${process.env.PUBLIC_URL}/life/mango.png`} alt="Fresh mango" />
+            <img
+              src={`${process.env.PUBLIC_URL}/life/mango.png`}
+              alt="Fresh mango"
+            />
           </div>
           <div className="life-photo life-photo--landscape">
-            <img src={`${process.env.PUBLIC_URL}/life/cooking.png`} alt="Cooking in Southeast Asia" />
+            <img
+              src={`${process.env.PUBLIC_URL}/life/cooking.png`}
+              alt="Cooking in Southeast Asia"
+            />
           </div>
         </div>
 
         <p className="life-blurb">
           Food is how I experience places. Five months in Southeast Asia
           permanently recalibrated what I expect from a meal: the markets in
-          Chiang Mai, bánh mì from a cart in Hội An, nasi goreng at midnight in
+          Chiang Mai, bánh mì from a cart in Hội An, nasi goreng for breakfast in
           Bali. Back home I'm always hunting for the next great bowl of
           something.
         </p>
@@ -220,10 +241,16 @@ function Life() {
             className="life-photo life-photo--landscape life-photo--headstand"
             style={{ aspectRatio: "4/3" }}
           >
-            <img src={`${process.env.PUBLIC_URL}/life/headstand.png`} alt="Headstand yoga practice" />
+            <img
+              src={`${process.env.PUBLIC_URL}/life/headstand.png`}
+              alt="Headstand yoga practice"
+            />
           </div>
           <div className="life-photo life-photo--landscape">
-            <img src={`${process.env.PUBLIC_URL}/life/graduation.png`} alt="Graduation day" />
+            <img
+              src={`${process.env.PUBLIC_URL}/life/graduation.png`}
+              alt="Graduation day"
+            />
           </div>
         </div>
 

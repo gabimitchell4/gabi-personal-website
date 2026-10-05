@@ -26,7 +26,7 @@ const projects = [
     id: "dailyduel",
     type: "TypeScript · React · Full-Stack · Group Project",
     name: "Daily Duel",
-    desc: "A competitive daily puzzle platform built in a team of four for CS 4530. I led the UI revamp, built the maze game frontend and arrow-key navigation from scratch, designed the badge system end-to-end, built the daily results DB and API, incorporated accessibility checks into the CI/CD pipeline, and wrote the Playwright e2e and Vitest test suites.",
+    desc: "A competitive daily puzzle platform built in a team of four. I led the UI revamp, built the maze game frontend and arrow-key navigation from scratch, designed the badge system end-to-end, built the daily results DB and API, incorporated accessibility checks into the CI/CD pipeline, and wrote the Playwright e2e and Vitest test suites.",
     link: "/dailyduel",
     panelColor: "#1a2340",
     panelType: "image",

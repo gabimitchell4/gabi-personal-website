@@ -28,7 +28,7 @@ function DailyDuel() {
           <p className="csp-text">
             Daily Duel is a web app where players tackle a new maze puzzle each day and compete
             against friends on a shared leaderboard. Built over a semester in a team of four for
-            CS 4530 (Foundations of Software Engineering) at Northeastern, the project extends a
+            Foundations of Software Engineering at Northeastern, the project extends a
             course-provided TypeScript/React/Node.js codebase with new features designed, built,
             and tested by our team.
           </p>
